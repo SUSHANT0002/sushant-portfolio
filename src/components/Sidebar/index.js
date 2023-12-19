@@ -26,7 +26,7 @@ const Sidebar = () =>(
             <FontAwesomeIcon icon={faEnvelope} color='#4d4d4e'/>
         </NavLink>
 
-        <a className="resume" target='_blank' href='https://drive.google.com/file/d/1L7yFsFOjv3l2xoA6KctO9lZ7osnxigy7/view?usp=sharing'><FontAwesomeIcon icon={faDownload}/></a>
+        <a className="resume" target='_blank' rel="noopener noreferrer" href='https://drive.google.com/file/d/1L7yFsFOjv3l2xoA6KctO9lZ7osnxigy7/view?usp=sharing'><FontAwesomeIcon icon={faDownload}/></a>
 
     </nav>
     <ul>

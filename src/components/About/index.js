@@ -10,7 +10,6 @@ import {
   faGithub,
   faHtml5,
   faJava,
-  faJs,
   faJsSquare,
   faLinux,
   faPython,
