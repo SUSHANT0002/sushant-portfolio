@@ -5,14 +5,9 @@ import LogoS from '../../assets/images/ganesha.png'
 import LogoSubtitle from '../../assets/images/logo_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
-  faBars,
-  faBurger,
-  faCircle,
-  faClose,
   faDownload,
   faEnvelope,
   faHome,
-  faMarsAndVenus,
   faUser,
 } from '@fortawesome/free-solid-svg-icons'
 import {
