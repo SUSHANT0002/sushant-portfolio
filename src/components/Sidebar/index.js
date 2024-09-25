@@ -5,6 +5,8 @@ import LogoS from '../../assets/images/ganesha.png'
 import LogoSubtitle from '../../assets/images/logo_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
+  faBars,
+  faClose,
   faDownload,
   faEnvelope,
   faHome,
@@ -29,9 +31,13 @@ const Sidebar = () => {
   }
   return (
     <>
-      <button className="toggleButton" onClick={toggleSidebar}>
-        {show ? 'Close' : 'Open'}
-      </button>
+      <span className="toggleButton" onClick={toggleSidebar}>
+        {show ? (
+          <FontAwesomeIcon icon={faClose} />
+        ) : (
+          <FontAwesomeIcon icon={faBars} />
+        )}
+      </span>
       <div className="nav-bar" ref={toggleRef}>
         <Link className="logo" to="/">
           <img src={LogoS} alt="logo" />
@@ -60,7 +66,7 @@ const Sidebar = () => {
             <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
           </NavLink>
 
-          <a href={files} download="Your_Resume_Name.pdf">
+          <a href={files} className="resume" download="Your_Resume_Name.pdf">
             <FontAwesomeIcon icon={faDownload} />
           </a>
         </nav>
