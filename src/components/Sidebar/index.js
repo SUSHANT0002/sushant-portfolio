@@ -1,8 +1,6 @@
-import { Link, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 import './index.scss'
 import { files } from '../../assets/files.js'
-import LogoS from '../../assets/images/ganesha.png'
-import LogoSubtitle from '../../assets/images/logo_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
   faBars,
@@ -31,18 +29,14 @@ const Sidebar = () => {
   }
   return (
     <>
-      <span className="toggleButton" onClick={toggleSidebar}>
+      <button className="toggleButton" onClick={toggleSidebar}>
         {show ? (
           <FontAwesomeIcon icon={faClose} />
         ) : (
           <FontAwesomeIcon icon={faBars} />
         )}
-      </span>
+      </button>
       <div className="nav-bar" ref={toggleRef}>
-        <Link className="logo" to="/">
-          <img src={LogoS} alt="logo" />
-          <img className="sub-logo" src={LogoSubtitle} alt="sushant" />
-        </Link>
         <nav>
           <NavLink exact="true" activeclassname="active" to="/">
             <FontAwesomeIcon icon={faHome} color="#4d4d4e" />

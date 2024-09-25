@@ -1,30 +1,14 @@
 .nav-bar {
   background: #000000;
   width: 70px;
-  height: 98%;
+  height: 100%;
   position: absolute;
-  top: 28px;
+  top: 0;
   right: 0;
   z-index: 3;
   text-align: center;
   display: none;
   min-height: 500px;
-
-  .logo {
-    display: block;
-    padding: 8px 0;
-
-    img {
-      display: block;
-      margin: 2px auto;
-      width: 40px;
-      height: auto;
-
-      &.sub-logo {
-        width: 60px;
-      }
-    }
-  }
 
   nav {
     display: block;
@@ -127,10 +111,10 @@
 .toggleButton {
   cursor: pointer;
   font-size: 25px;
-  height: 25px;
+  height: 30px;
   text-align: center;
-  right: 0;
-  position: absolute;
-  width: 60px;
+  right: 15px;
+  top: 10px;
+  position: fixed;
   z-index: 999999;
 }
